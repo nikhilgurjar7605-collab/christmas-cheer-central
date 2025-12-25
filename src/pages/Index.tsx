@@ -1,9 +1,13 @@
 import Snowfall from "@/components/Snowfall";
 import ChristmasHero from "@/components/ChristmasHero";
-import FriendsSection from "@/components/FriendsSection";
+import CrushCard from "@/components/CrushCard";
+import SorrySection from "@/components/SorrySection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  // Replace this with her actual photo URL once uploaded
+  const crushPhotoUrl = undefined;
+
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
       {/* Animated snowfall */}
@@ -12,7 +16,8 @@ const Index = () => {
       {/* Main content */}
       <main className="relative z-10">
         <ChristmasHero />
-        <FriendsSection />
+        <CrushCard photoUrl={crushPhotoUrl} />
+        <SorrySection />
         <Footer />
       </main>
     </div>
