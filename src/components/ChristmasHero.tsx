@@ -44,7 +44,7 @@ const ChristmasHero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="font-body text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto"
         >
-          Wishing you warmth, joy, and all the magic of the holiday season
+          A special wish from <span className="text-christmas-gold font-semibold">Jay</span> to <span className="text-christmas-red font-semibold">Muskaan</span>
         </motion.p>
 
         {/* Decorative divider */}
