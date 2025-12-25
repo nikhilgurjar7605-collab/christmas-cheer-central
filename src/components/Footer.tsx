@@ -15,12 +15,22 @@ const Footer = () => {
 
           {/* Closing message */}
           <h3 className="font-display text-3xl md:text-4xl text-foreground">
-            With Love & Warm Wishes
+            Forever & Always
           </h3>
 
           <p className="font-body text-muted-foreground text-lg max-w-md mx-auto">
-            May this Christmas bring you peace, joy, and all the happiness your heart can hold.
+            May this Christmas bring us closer together, and fill your heart with joy and love.
           </p>
+
+          {/* Signature */}
+          <div className="pt-4">
+            <p className="font-display text-2xl text-christmas-gold">
+              With Love,
+            </p>
+            <p className="font-display text-3xl text-christmas-gold mt-2">
+              Jay 💖
+            </p>
+          </div>
 
           {/* Year badge */}
           <div className="inline-flex items-center gap-3 bg-card/50 backdrop-blur-sm border border-border/50 rounded-full px-6 py-3 mt-8">
@@ -32,7 +42,7 @@ const Footer = () => {
           {/* Hearts */}
           <div className="flex justify-center gap-3 pt-6 text-2xl">
             <span className="text-christmas-red animate-pulse">❤️</span>
-            <span className="text-christmas-green animate-pulse" style={{ animationDelay: "0.2s" }}>💚</span>
+            <span className="text-christmas-gold animate-pulse" style={{ animationDelay: "0.2s" }}>💛</span>
             <span className="text-christmas-red animate-pulse" style={{ animationDelay: "0.4s" }}>❤️</span>
           </div>
         </motion.div>
