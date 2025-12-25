@@ -37,23 +37,14 @@ const ChristmasHero = () => {
           <span className="text-gradient-gold">Christmas</span>
         </motion.h1>
 
-        {/* Subtitle - made more personal */}
+        {/* Subtitle */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-body text-xl md:text-2xl text-muted-foreground mb-4 max-w-2xl mx-auto"
+          className="font-body text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto"
         >
-          A special message just for you
-        </motion.p>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="font-body text-lg text-christmas-gold/80 mb-8"
-        >
-          ~ From Jay 💝
+          Wishing you warmth, joy, and all the magic of the holiday season
         </motion.p>
 
         {/* Decorative divider */}
@@ -77,7 +68,7 @@ const ChristmasHero = () => {
         >
           <span className="animate-twinkle">🎁</span>
           <span className="animate-twinkle" style={{ animationDelay: "0.3s" }}>❄️</span>
-          <span className="animate-twinkle" style={{ animationDelay: "0.6s" }}>💖</span>
+          <span className="animate-twinkle" style={{ animationDelay: "0.6s" }}>🌟</span>
           <span className="animate-twinkle" style={{ animationDelay: "0.9s" }}>🔔</span>
           <span className="animate-twinkle" style={{ animationDelay: "1.2s" }}>🎅</span>
         </motion.div>
@@ -91,7 +82,7 @@ const ChristmasHero = () => {
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
       >
         <div className="flex flex-col items-center gap-2 text-muted-foreground">
-          <span className="font-body text-sm">Scroll down</span>
+          <span className="font-body text-sm">Scroll to see your wishes</span>
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
