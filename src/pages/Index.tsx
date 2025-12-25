@@ -1,22 +1,28 @@
-import Confetti from "@/components/Confetti";
-import NewYearHero from "@/components/NewYearHero";
-import WishesSection from "@/components/WishesSection";
-import SorrySection from "@/components/SorrySection";
-import Footer from "@/components/Footer";
+import { useState } from "react";
+import WelcomeScreen from "@/components/WelcomeScreen";
+import CelebrationPage from "@/components/CelebrationPage";
 
 const Index = () => {
+  const [userName, setUserName] = useState<string>("");
+  const [hasEntered, setHasEntered] = useState(false);
+
+  const handleNameSubmit = (name: string) => {
+    setUserName(name);
+    setHasEntered(true);
+  };
+
+  const handleReset = () => {
+    setUserName("");
+    setHasEntered(false);
+  };
+
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
-      {/* Animated confetti */}
-      <Confetti />
-
-      {/* Main content */}
-      <main className="relative z-10">
-        <NewYearHero />
-        <WishesSection />
-        <SorrySection />
-        <Footer />
-      </main>
+      {!hasEntered ? (
+        <WelcomeScreen onNameSubmit={handleNameSubmit} />
+      ) : (
+        <CelebrationPage userName={userName} onReset={handleReset} />
+      )}
     </div>
   );
 };
