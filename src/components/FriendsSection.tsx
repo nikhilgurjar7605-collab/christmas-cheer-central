@@ -2,22 +2,9 @@ import { motion } from "framer-motion";
 import FriendCard from "./FriendCard";
 
 const FriendsSection = () => {
-  const friends = [
-    {
-      name: "To My Dearest Girl",
-      message: "May your Christmas be filled with all the love and sparkle you bring into this world. You're a gift that keeps on giving, and I'm so grateful to have you in my life. Here's to cozy moments, sweet treats, and endless laughter this holiday season! 💖",
-      emoji: "👸",
-    },
-    {
-      name: "To My Best Bro",
-      message: "Merry Christmas, dude! Thanks for always having my back and making every moment epic. May your holidays be filled with good vibes, great food, and all the adventures yet to come. Let's make more memories in the new year! 🤜🤛",
-      emoji: "🦸‍♂️",
-    },
-  ];
-
   return (
     <section className="relative py-24 px-4">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-3xl mx-auto">
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -26,25 +13,36 @@ const FriendsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="font-display text-4xl md:text-5xl text-foreground mb-4">
-            Special Wishes For <span className="text-christmas-gold">You</span>
+            For You, <span className="text-christmas-gold">Muskaan</span>
           </h2>
           <p className="font-body text-muted-foreground text-lg">
-            Because you both mean the world to me ✨
+            A special Christmas message just for you ✨
           </p>
         </motion.div>
 
-        {/* Friend cards grid */}
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-          {friends.map((friend, index) => (
-            <FriendCard
-              key={friend.name}
-              name={friend.name}
-              message={friend.message}
-              emoji={friend.emoji}
-              delay={index * 0.2}
-            />
-          ))}
-        </div>
+        {/* Single card for Muskaan */}
+        <FriendCard
+          name="Muskaan"
+          message="This Christmas, I just wanted you to know how special you are to me. Your smile lights up my world brighter than any Christmas star. Wishing you all the happiness, warmth, and magic this holiday season. You deserve all the beautiful things life has to offer. 💖"
+          emoji="💝"
+          delay={0.2}
+        />
+
+        {/* From signature */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.6 }}
+          className="text-center mt-12"
+        >
+          <p className="font-display text-2xl text-christmas-gold">
+            With love,
+          </p>
+          <p className="font-display text-3xl text-foreground mt-2">
+            Jay 💫
+          </p>
+        </motion.div>
       </div>
     </section>
   );
