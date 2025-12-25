@@ -12,7 +12,7 @@ const SorrySection = () => {
           className="relative"
         >
           {/* Decorative glow */}
-          <div className="absolute inset-0 bg-gradient-to-br from-christmas-red/10 to-pink-500/10 rounded-3xl blur-2xl" />
+          <div className="absolute inset-0 bg-gradient-to-br from-newyear-purple/10 to-newyear-pink/10 rounded-3xl blur-2xl" />
           
           <div className="relative bg-card/60 backdrop-blur-sm border border-border/50 rounded-3xl p-10 text-center">
             {/* Heart icon */}
@@ -26,16 +26,16 @@ const SorrySection = () => {
               🥺
             </motion.div>
 
-            <h3 className="font-display text-3xl md:text-4xl text-christmas-gold mb-6">
+            <h3 className="font-display text-3xl md:text-4xl text-newyear-gold mb-6">
               I'm Sorry, Muskaan
             </h3>
 
-            <div className="w-20 h-0.5 bg-gradient-to-r from-transparent via-christmas-red/60 to-transparent mx-auto mb-6" />
+            <div className="w-20 h-0.5 bg-gradient-to-r from-transparent via-newyear-purple/60 to-transparent mx-auto mb-6" />
 
             <p className="font-body text-lg text-foreground/90 leading-relaxed mb-6">
-              If I ever hurt you or made you feel sad, I'm truly sorry from the bottom of my heart. 
+              As we begin this new year, I want to start fresh. If I ever hurt you or made you feel sad, I'm truly sorry from the bottom of my heart. 
               You mean so much to me, and the last thing I ever want is to see you upset because of me. 
-              Please forgive me. 💔
+              Let's leave all the pain in 2025 and step into 2026 with love and happiness. Please forgive me. 💔
             </p>
 
             <motion.div

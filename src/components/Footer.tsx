@@ -10,30 +10,30 @@ const Footer = () => {
           viewport={{ once: true }}
           className="space-y-6"
         >
-          {/* Christmas tree decoration */}
-          <div className="text-5xl mb-4">🎄</div>
+          {/* Celebration decoration */}
+          <div className="text-5xl mb-4">🎆</div>
 
           {/* Closing message */}
           <h3 className="font-display text-3xl md:text-4xl text-foreground">
-            With Love & Warm Wishes
+            With Love & Best Wishes
           </h3>
 
           <p className="font-body text-muted-foreground text-lg max-w-md mx-auto">
-            May this Christmas bring you peace, joy, and all the happiness your heart can hold.
+            May 2026 bring you success, happiness, and all the wonderful moments your heart desires.
           </p>
 
           {/* Year badge */}
           <div className="inline-flex items-center gap-3 bg-card/50 backdrop-blur-sm border border-border/50 rounded-full px-6 py-3 mt-8">
-            <span className="text-christmas-gold">🌟</span>
-            <span className="font-body text-foreground font-medium">Christmas 2025</span>
-            <span className="text-christmas-gold">🌟</span>
+            <span className="text-newyear-gold">🌟</span>
+            <span className="font-body text-foreground font-medium">Happy New Year 2026</span>
+            <span className="text-newyear-gold">🌟</span>
           </div>
 
           {/* Hearts */}
           <div className="flex justify-center gap-3 pt-6 text-2xl">
-            <span className="text-christmas-red animate-pulse">❤️</span>
-            <span className="text-christmas-green animate-pulse" style={{ animationDelay: "0.2s" }}>💚</span>
-            <span className="text-christmas-red animate-pulse" style={{ animationDelay: "0.4s" }}>❤️</span>
+            <span className="text-newyear-purple animate-pulse">💜</span>
+            <span className="text-newyear-gold animate-pulse" style={{ animationDelay: "0.2s" }}>💛</span>
+            <span className="text-newyear-purple animate-pulse" style={{ animationDelay: "0.4s" }}>💜</span>
           </div>
         </motion.div>
       </div>
